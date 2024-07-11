@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #232f3e;
+    color: white;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.header-top .logo img {
+    height: 40px;
+}
+
+.header-top .search-bar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.header-top .search-bar select,
+.header-top .search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.header-top .search-bar button {
+    padding: 10px;
+    background-color: #febd69;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.header-top .account-options {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-top .account-options div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-top .account-options .account:hover .dropdown,
+.header-top .account-options .orders:hover .dropdown {
+    display: block;
+}
+
+.header-top .account-options .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    color: black;
+    border: 1px solid #ddd;
+    padding: 10px;
+    z-index: 1;
+    width: 200px;
+}
+
+.header-top .account-options .dropdown a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.header-top .account-options .dropdown a:hover {
+    background-color: #f3f3f3;
+}
+
+.header-top .account-options .cart {
+    display: flex;
+    align-items: center;
+}
+
+.header-top .account-options .cart img {
+    height: 24px;
+    margin-right: 5px;
+}
+
+.header-bottom {
+    background-color: #131a22;
+    padding: 10px 20px;
+}
+
+.header-bottom ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.header-bottom ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+main .hero {
+    text-align: center;
+    padding: 20px 30px;
+    background-color: #f3f3f3;
+}
+
+main .products {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+}
+
+main .products .product {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+main .products .product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+main .products .product img {
+    width: 100%;
+    height: auto;
+}
+
+main .products .product button {
+    padding: 10px;
+    background-color: #febd69;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #232f3e;
+    color: white;
+}
